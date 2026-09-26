@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Noproblemrr | Road to Everest: Thailand's Youngest Summiter</title>
-  <meta name="description" content="Solo mountaineer aiming to become the youngest Thai to summit Mt. Everest. Completed EBC unguided at 16. Next target: Island Peak (April 2027).">
+  <meta name="description" content="Solo mountaineer aiming to become the youngest Thai to summit Mt. Everest. Completed overland EBC unguided at 16. Next target: Island Peak (April 2027).">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -173,10 +173,10 @@
     }
 
     .hero h1 {
-      font-size: clamp(2.5rem, 5.5vw, 4.2rem);
+      font-size: clamp(2.4rem, 5.5vw, 4.2rem);
       font-weight: 800;
-      line-height: 1.1;
-      max-width: 950px;
+      line-height: 1.15;
+      max-width: 980px;
       margin: 0 auto 20px;
     }
 
@@ -189,7 +189,7 @@
     .hero p {
       font-size: clamp(1.05rem, 2vw, 1.25rem);
       color: var(--text-muted);
-      max-width: 780px;
+      max-width: 820px;
       margin: 0 auto 36px;
     }
 
@@ -252,7 +252,7 @@
 
     .section-header {
       text-align: center;
-      max-width: 700px;
+      max-width: 720px;
       margin: 0 auto 50px;
     }
 
@@ -275,7 +275,6 @@
       padding: 40px;
       backdrop-filter: blur(10px);
       position: relative;
-      overflow: hidden;
     }
 
     .story-quote {
@@ -322,6 +321,73 @@
       display: flex;
       align-items: center;
       gap: 8px;
+    }
+
+    /* Gallery Section */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .gallery-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .gallery-card:hover {
+      border-color: var(--border-highlight);
+      transform: translateY(-4px);
+    }
+
+    .gallery-img-container {
+      width: 100%;
+      height: 380px;
+      background: #111827;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-card:hover .gallery-img {
+      transform: scale(1.03);
+    }
+
+    .gallery-content {
+      padding: 20px 24px;
+      flex-grow: 1;
+    }
+
+    .gallery-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      letter-spacing: 0.05em;
+    }
+
+    .gallery-title {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+    }
+
+    .gallery-desc {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
     }
 
     /* Interactive Trek Map */
@@ -596,8 +662,9 @@
         🏔️ NOPROBLEMRR <span>// EVEREST</span>
       </a>
       <ul class="nav-links">
+        <li><a href="#gallery">Expedition Photos</a></li>
         <li><a href="#story">The Story</a></li>
-        <li><a href="#trek">EBC Trek</a></li>
+        <li><a href="#trek">Overland Trek</a></li>
         <li><a href="#videos">Videos</a></li>
         <li><a href="#roadmap">Roadmap</a></li>
         <li><a href="#sponsor">Sponsorship</a></li>
@@ -612,14 +679,15 @@
       <div class="badge">Goal: Youngest Thai Mountaineer on Everest</div>
       <h1>
         Aiming For The Roof Of The World.<br>
-        <span class="gradient-text">Solo at 16. Island Peak at 17. Everest Next.</span>
+        <span class="gradient-text">Overland & Unguided at 16. Island Peak Next.</span>
       </h1>
       <p>
-        I conquered the trek to Everest Base Camp (5,364m) solo and completely without a guide. Now, backed by fellow mountaineers who believed in my dream, I am training for technical Himalayan summits on the path to becoming the youngest person from Thailand to summit Mount Everest.
+        Bypassing the flights, I took the rugged overland jeep journey from Kathmandu to Surke, then completed the entire trek to Everest Base Camp (5,364m) solo and unguided. Now, inspired by mountaineers who believed in my potential, I am pursuing summits on Island Peak (April 2027) and Ama Dablam (April 2028) on the path to becoming the youngest person from Thailand to summit Mount Everest.
       </p>
       <div class="hero-actions">
         <a href="#sponsor" class="btn btn-primary">Become a Sponsor</a>
-        <a href="https://www.youtube.com/@noproblemrr" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Watch on YouTube (@noproblemrr)</a>
+        <a href="#gallery" class="btn btn-outline">View Expedition Photos</a>
+        <a href="https://www.youtube.com/@noproblemrr" target="_blank" rel="noopener noreferrer" class="btn btn-outline">YouTube (@noproblemrr)</a>
       </div>
 
       <!-- Stats Grid -->
@@ -627,7 +695,7 @@
         <div class="stat-card">
           <div class="stat-number">5,364m</div>
           <div class="stat-label">Everest Base Camp</div>
-          <div class="stat-desc">Completed Solo & Unguided at 16</div>
+          <div class="stat-desc">Kathmandu → Surke overland, unguided at 16</div>
         </div>
         <div class="stat-card">
           <div class="stat-number">6,189m</div>
@@ -648,26 +716,80 @@
     </div>
   </section>
 
+  <!-- Expedition Photo Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Field Dispatches: Expedition Gallery</h2>
+        <p class="section-subtitle">Real, unguided high-altitude mountaineering through the eyes of a 16-year-old.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Photo 1: Everest Base Camp Rock -->
+        <div class="gallery-card">
+          <div class="gallery-img-container">
+            <img src="images/ebc-summit.jpg" alt="Everest Base Camp 5364m - Noproblemrr standing on the iconic summit rock" class="gallery-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1544735716-392fe2489ffa?q=80&w=1000&auto=format&fit=crop';">
+          </div>
+          <div class="gallery-content">
+            <span class="gallery-tag">Summit Rock // 5,364m</span>
+            <h3 class="gallery-title">Standing At Everest Base Camp</h3>
+            <p class="gallery-desc">
+              Triumphantly reaching the historic painted rock of Everest Base Camp at 5,364m after days of self-navigated trekking across the Khumbu glacier moraine.
+            </p>
+          </div>
+        </div>
+
+        <!-- Photo 2: Khumbu Glacier Trail -->
+        <div class="gallery-card">
+          <div class="gallery-img-container">
+            <img src="images/trail-khumbu.jpg" alt="High altitude trek solo with full pack framed by snowy Himalayan peaks" class="gallery-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1516426122078-c23e76319801?q=80&w=1000&auto=format&fit=crop';">
+          </div>
+          <div class="gallery-content">
+            <span class="gallery-tag">High Altitude // 4,900m+</span>
+            <h3 class="gallery-title">In the Shadow of Giants</h3>
+            <p class="gallery-desc">
+              Carrying all gear and supplies independently on the rocky glacial moraine, surrounded by towering Himalayan peaks and thin sub-zero air.
+            </p>
+          </div>
+        </div>
+
+        <!-- Photo 3: Pasang Lhamu Gate -->
+        <div class="gallery-card">
+          <div class="gallery-img-container">
+            <img src="images/pasang-lhamu-gate.jpg" alt="Pasang Lhamu Gate Lukla - Trekking up from Surke into the Everest Trail" class="gallery-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1000&auto=format&fit=crop';">
+          </div>
+          <div class="gallery-content">
+            <span class="gallery-tag">The Gateway // 2,860m</span>
+            <h3 class="gallery-title">Pasang Lhamu Gate, Lukla</h3>
+            <p class="gallery-desc">
+              Stepping onto the historic trail under the Pasang Lhamu Gate with a full pack, having completed the grueling overland jeep journey from Kathmandu to Surke.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- The Story & Why Section -->
   <section id="story">
     <div class="container">
       <div class="section-header">
         <h2 class="section-title">The Spark at 5,364 Meters</h2>
-        <p class="section-subtitle">Why a solo teenage trek turned into a mission to make Thai mountaineering history.</p>
+        <p class="section-subtitle">Why an overland teenage trek turned into a mission to make Thai mountaineering history.</p>
       </div>
 
       <div class="story-card">
-        <h3>How It Started</h3>
+        <h3>The Overland Decision</h3>
         <p>
-          I set out on the Everest Base Camp trek independently—carrying my own pack, navigating the Khumbu Valley alone without a guide or porter, and documenting every raw, challenging moment for my YouTube channel, <strong>@noproblemrr</strong>.
+          Instead of booking a short flight straight into Lukla Airport, I committed to the true overland route—an intense, grueling 15+ hour off-road jeep drive from Kathmandu to Surke, followed by hiking up into Lukla on foot. Carrying my own full pack, I navigated the entire Khumbu Valley round-trip without a guide or porter, filming every honest moment for my YouTube channel, <strong>@noproblemrr</strong>.
         </p>
         
         <div class="story-quote">
-          "When I reached Everest Base Camp, I met a group of international climbers. Seeing a 16-year-old standing there alone and unguided, they stopped me, handed me $200 from their own pockets, and said: <br><strong>'Take this. Keep training, and become the youngest climber from Thailand to summit Mount Everest.'</strong>"
+          "When I reached Everest Base Camp, I met a group of international climbers. Seeing a 16-year-old standing there alone, unguided, having trekked all the way up from Surke, they stopped me, handed me $200 from their own pockets, and said: <br><strong>'Take this. Keep training, and become the youngest climber from Thailand to summit Mount Everest.'</strong>"
         </div>
 
         <p>
-          That moment transformed a personal adventure into a lifetime calling. Those climbers didn’t just give me $200—they gave me the conviction that with discipline, relentless preparation, and the right partners, a Thai teenager can stand on the highest point on Earth.
+          That moment transformed a solo endurance test into an unwavering mission. Those climbers didn’t just hand me $200—they gave me the conviction that with discipline, technical climbing mastery, and dedicated sponsors, a Thai teenager can stand on the top of the world.
         </p>
 
         <div class="story-grid">
@@ -692,8 +814,8 @@
   <section id="trek">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">The Solo EBC Journey</h2>
-        <p class="section-subtitle">Click each checkpoint along my unguided trek to explore altitudes and key milestones.</p>
+        <h2 class="section-title">The Overland & Solo EBC Route</h2>
+        <p class="section-subtitle">Click each checkpoint along my route—from the Kathmandu jeep to Base Camp and back.</p>
       </div>
 
       <div class="trek-container">
@@ -703,17 +825,17 @@
 
         <div class="checkpoint-display" id="checkpointDisplay">
           <div>
-            <h3 id="cpTitle" style="font-size: 1.5rem; margin-bottom: 8px;">Lukla</h3>
+            <h3 id="cpTitle" style="font-size: 1.5rem; margin-bottom: 8px;">Kathmandu to Surke</h3>
             <p id="cpSummary" style="color: var(--text-muted); font-size: 1rem; margin-bottom: 16px;">
-              The trek begins after flying into Tenzing-Hillary Airport. Packed gear, adjusted straps, and stepped onto the trail solo.
+              Overland off-road jeep drive from Kathmandu through Salleri/Thamdanda to Surke. Bypassed the flight into Lukla to begin the journey entirely overland.
             </p>
             <div id="cpDetails" style="background: rgba(255,255,255,0.03); padding: 16px; border-radius: 8px; border-left: 3px solid var(--primary); font-size: 0.9rem;">
-              Solo Challenge: Initial gear check and pacing under a heavy solo pack.
+              Expedition Highlight: 15+ hours on unpaved mountain roads, testing patience and grit before taking a single step on the trail.
             </div>
           </div>
           <div style="text-align: right; display: flex; flex-direction: column; justify-content: center;">
-            <div class="checkpoint-alt" id="cpAltitude">2,860m</div>
-            <div style="color: var(--text-muted); font-size: 0.85rem;" id="cpDay">Day 1</div>
+            <div class="checkpoint-alt" id="cpAltitude">2,290m</div>
+            <div style="color: var(--text-muted); font-size: 0.85rem;" id="cpDay">Stage 1</div>
           </div>
         </div>
       </div>
@@ -763,7 +885,7 @@
           <div>
             <h3 style="font-size: 1.3rem;">Everest Base Camp (5,364m)</h3>
             <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 4px;">
-              Completed solo and completely unguided. Tested endurance, acclimatization resilience, and captured the entire expedition on YouTube. Received the $200 catalyst gift from international mountaineers.
+              Completed round-trip overland (Kathmandu–Surke jeep + unguided trek). Tested endurance, self-navigation, and captured the entire expedition on YouTube. Received the $200 catalyst gift from international mountaineers at base camp.
             </p>
           </div>
         </div>
@@ -921,56 +1043,70 @@
   </footer>
 
   <script>
-    // Interactive Checkpoint Data for EBC
+    // Interactive Checkpoint Data for Overland EBC
     const checkpoints = [
       {
-        name: "Lukla",
-        day: "Day 1",
+        name: "Kathmandu → Surke",
+        day: "Stage 1",
+        altitude: "2,290m",
+        summary: "15+ hour rugged off-road jeep drive across Nepal's mountain passes to Surke, completely bypassing the Lukla flight.",
+        detail: "Grit & Determination: Choosing the tough overland path on unpaved switchbacks instead of taking a commercial flight."
+      },
+      {
+        name: "Surke → Lukla",
+        day: "Stage 2",
         altitude: "2,860m",
-        summary: "The expedition kicked off landing at the legendary Tenzing-Hillary Airport. Strapped up my 18kg pack and began the trek solo into the Dudh Kosi valley.",
-        detail: "Key Takeaway: Navigating route markers and managing pack weight independently without a porter."
+        summary: "Trek up from Surke into Lukla, stepping proudly through the Pasang Lhamu Gate to enter the main Everest trail.",
+        detail: "The Official Gateway: Gaining elevation on foot with a full unguided pack."
       },
       {
         name: "Namche Bazaar",
-        day: "Day 2-3",
+        day: "Stage 3-4",
         altitude: "3,440m",
-        summary: "The bustling cultural capital of the Sherpa community nestled in a natural mountain amphitheater. Took essential acclimatization hikes above 3,800m.",
-        detail: "Key Takeaway: Monitoring resting heart rate and blood oxygen levels before continuing higher."
+        summary: "The bustling cultural capital of the Sherpa community nestled in a natural mountain amphitheater. Acclimatization hikes above 3,800m.",
+        detail: "Acclimatization: Managing resting heart rate and adapting to thinning oxygen."
       },
       {
         name: "Tengboche",
-        day: "Day 4",
+        day: "Stage 5",
         altitude: "3,867m",
-        summary: "Home to the famous Tengboche Monastery. Caught my first awe-inspiring, up-close view of Ama Dablam soaring into the sky—the peak I will summit in 2028.",
-        detail: "Key Takeaway: Spiritual pause and the realization of how steep technical peaks like Ama Dablam really are."
+        summary: "Home to the revered monastery with dramatic close-up views of Ama Dablam soaring overhead—the target for April 2028.",
+        detail: "Inspiration: Eyeing the steep rock and ice ridges of Ama Dablam from the trail."
       },
       {
         name: "Dingboche",
-        day: "Day 5-6",
+        day: "Stage 6-7",
         altitude: "4,410m",
-        summary: "Stepped beyond the tree line into harsh alpine winds and stone-walled fields. Completed a grueling acclimatization push up Nangkartshang Peak (5,083m).",
-        detail: "Key Takeaway: Thin air begins to demand deliberate, slow breathing and constant hydration."
+        summary: "Above the tree line in sub-zero winds. Acclimatization climb up Nangkartshang Peak (5,083m) with solo pack.",
+        detail: "Alpine Discipline: Staying hydrated and maintaining deliberate step pacing."
       },
       {
         name: "Lobuche",
-        day: "Day 7",
+        day: "Stage 8",
         altitude: "4,940m",
-        summary: "Walked past the emotional memorials of Everest climbers at Thokla Pass. The Khumbu Glacier moraine loomed ahead.",
-        detail: "Key Takeaway: Respect for the mountain and the serious discipline required for 8,000m summits."
+        summary: "Passing the solemn climber memorials at Thokla Pass into the shadow of the Khumbu Glacier.",
+        detail: "Mountaineer Respect: Honoring those who paved the way on Everest."
       },
       {
         name: "Gorak Shep",
-        day: "Day 8",
+        day: "Stage 9",
         altitude: "5,164m",
-        summary: "The highest frozen outpost before the base camp. Sub-zero temperatures, freezing wind, and a final push over rocky glacial rubble.",
-        detail: "Key Takeaway: Staying mentally sharp despite cold fatigue and high elevation."
+        summary: "The final frozen outpost before the glacier. Frigid winds, frozen ground, and the last push over rock and moraine.",
+        detail: "Mental Toughness: Pushing through cold fatigue with zero guide assistance."
       },
       {
         name: "Everest Base Camp",
-        day: "Day 8 (Summit Day)",
+        day: "Stage 9 (Goal)",
         altitude: "5,364m",
-        summary: "Reached the iconic EBC prayer flags! Met the group of international climbers who gifted me $200 and inspired me to become the youngest Thai to summit Everest.",
-        detail: "The Turning Point: The birth of the dream to summit Island Peak (2027), Ama Dablam (2028), and Mount Everest (8,848m)."
+        summary: "Standing atop the historic EBC rock! Met the climbers who handed me $200 and urged me to become the youngest Thai to summit Everest.",
+        detail: "The Mission is Born: Transitioning from a solo trekker to an aspiring Himalayan record-holder."
+      },
+      {
+        name: "Round-Trip Overland Return",
+        day: "Stage 10-12",
+        altitude: "2,290m → KTM",
+        summary: "Trekked all the way back down through Surke and took the return jeep to Kathmandu, completing the 100% overland expedition.",
+        detail: "Full Commitment: Completed the round trip with no flights."
       }
     ];
 
