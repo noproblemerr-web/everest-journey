@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noproblemrr | Road to Everest: Thailand's Youngest Summiter</title>
+  <meta name="description" content="Solo mountaineer aiming to become the youngest Thai to summit Mt. Everest. Completed EBC unguided at 16. Next target: Island Peak (April 2027).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0a0e17;
+      --bg-card: rgba(18, 24, 38, 0.75);
+      --bg-card-hover: rgba(26, 35, 56, 0.9);
+      --border-color: rgba(56, 189, 248, 0.15);
+      --border-highlight: rgba(56, 189, 248, 0.4);
+      --primary: #38bdf8;
+      --primary-hover: #0ea5e9;
+      --accent: #f59e0b;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --max-width: 1200px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 15% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 70%, rgba(14, 165, 233, 0.06) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Space Grotesk', sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--primary-hover);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Navigation */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10, 14, 23, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 0;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo span {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: var(--text-main);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 22px;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      border: 1px solid transparent;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #38bdf8 0%, #0284c7 100%);
+      color: #041226;
+      box-shadow: 0 4px 20px rgba(56, 189, 248, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #7dd3fc 0%, #0369a1 100%);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 24px rgba(56, 189, 248, 0.45);
+      color: #041226;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: var(--border-color);
+      color: var(--text-main);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      background: rgba(56, 189, 248, 0.08);
+      color: var(--primary);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 0 60px;
+      text-align: center;
+      position: relative;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--border-color);
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5.5vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.1;
+      max-width: 950px;
+      margin: 0 auto 20px;
+    }
+
+    .hero h1 .gradient-text {
+      background: linear-gradient(135deg, #ffffff 40%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      color: var(--text-muted);
+      max-width: 780px;
+      margin: 0 auto 36px;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 40px;
+    }
+
+    .stat-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px 20px;
+      backdrop-filter: blur(8px);
+      text-align: left;
+      transition: all 0.3s ease;
+    }
+
+    .stat-card:hover {
+      border-color: var(--border-highlight);
+      transform: translateY(-2px);
+    }
+
+    .stat-number {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 4px;
+    }
+
+    .stat-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Section Styles */
+    section {
+      padding: 80px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Story Section */
+    .story-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 40px;
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .story-quote {
+      border-left: 4px solid var(--primary);
+      padding: 16px 24px;
+      margin: 24px 0;
+      background: rgba(56, 189, 248, 0.05);
+      border-radius: 0 12px 12px 0;
+      font-style: italic;
+      color: #e2e8f0;
+      font-size: 1.1rem;
+    }
+
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-top: 32px;
+    }
+
+    @media (max-width: 768px) {
+      .story-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+      .story-card {
+        padding: 24px;
+      }
+    }
+
+    .story-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .story-item h4 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Interactive Trek Map */
+    .trek-container {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 32px;
+      backdrop-filter: blur(10px);
+    }
+
+    .trek-controls {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      scrollbar-width: thin;
+    }
+
+    .trek-btn {
+      padding: 10px 18px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+
+    .trek-btn.active, .trek-btn:hover {
+      background: var(--primary);
+      color: #041226;
+      border-color: var(--primary);
+    }
+
+    .checkpoint-display {
+      background: rgba(10, 14, 23, 0.6);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 14px;
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+      .checkpoint-display {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .checkpoint-alt {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    /* Video Section */
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 16px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* Expedition Roadmap */
+    .roadmap-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      position: relative;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 24px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      align-items: center;
+      transition: all 0.3s ease;
+    }
+
+    .timeline-item:hover {
+      border-color: var(--border-highlight);
+      transform: translateX(4px);
+    }
+
+    .timeline-badge {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .status-completed {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(52, 211, 153, 0.3);
+    }
+
+    .status-next {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+    }
+
+    .status-future {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(251, 191, 36, 0.3);
+    }
+
+    @media (max-width: 640px) {
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Sponsorship Tiers */
+    .tier-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .tier-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 36px 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .tier-card.featured {
+      border-color: var(--primary);
+      box-shadow: 0 0 30px rgba(56, 189, 248, 0.15);
+      background: linear-gradient(180deg, rgba(56, 189, 248, 0.08) 0%, rgba(18, 24, 38, 0.85) 100%);
+    }
+
+    .tier-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .tier-badge {
+      position: absolute;
+      top: -12px;
+      right: 24px;
+      background: var(--primary);
+      color: #041226;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 9999px;
+      text-transform: uppercase;
+    }
+
+    .tier-title {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+
+    .tier-target {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+    }
+
+    .tier-features {
+      list-style: none;
+      margin: 24px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+    }
+
+    .tier-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .tier-features li::before {
+      content: "✓";
+      color: var(--primary);
+      font-weight: 800;
+    }
+
+    /* Contact & Form */
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 40px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #e2e8f0;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px 16px;
+      background: rgba(10, 14, 23, 0.7);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: border-color 0.2s;
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 40px 0;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        🏔️ NOPROBLEMRR <span>// EVEREST</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#story">The Story</a></li>
+        <li><a href="#trek">EBC Trek</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a href="#sponsor">Sponsorship</a></li>
+      </ul>
+      <a href="#sponsor" class="btn btn-primary">Partner With Me</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="badge">Goal: Youngest Thai Mountaineer on Everest</div>
+      <h1>
+        Aiming For The Roof Of The World.<br>
+        <span class="gradient-text">Solo at 16. Island Peak at 17. Everest Next.</span>
+      </h1>
+      <p>
+        I conquered the trek to Everest Base Camp (5,364m) solo and completely without a guide. Now, backed by fellow mountaineers who believed in my dream, I am training for technical Himalayan summits on the path to becoming the youngest person from Thailand to summit Mount Everest.
+      </p>
+      <div class="hero-actions">
+        <a href="#sponsor" class="btn btn-primary">Become a Sponsor</a>
+        <a href="https://www.youtube.com/@noproblemrr" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Watch on YouTube (@noproblemrr)</a>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">5,364m</div>
+          <div class="stat-label">Everest Base Camp</div>
+          <div class="stat-desc">Completed Solo & Unguided at 16</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">6,189m</div>
+          <div class="stat-label">Island Peak (Next)</div>
+          <div class="stat-desc">Target: April 2027 technical climb</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">6,812m</div>
+          <div class="stat-label">Ama Dablam</div>
+          <div class="stat-desc">Target: April 2028 technical wall</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">8,848m</div>
+          <div class="stat-label">Mt. Everest Summit</div>
+          <div class="stat-desc">Target: Youngest Thai Summiter</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Story & Why Section -->
+  <section id="story">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">The Spark at 5,364 Meters</h2>
+        <p class="section-subtitle">Why a solo teenage trek turned into a mission to make Thai mountaineering history.</p>
+      </div>
+
+      <div class="story-card">
+        <h3>How It Started</h3>
+        <p>
+          I set out on the Everest Base Camp trek independently—carrying my own pack, navigating the Khumbu Valley alone without a guide or porter, and documenting every raw, challenging moment for my YouTube channel, <strong>@noproblemrr</strong>.
+        </p>
+        
+        <div class="story-quote">
+          "When I reached Everest Base Camp, I met a group of international climbers. Seeing a 16-year-old standing there alone and unguided, they stopped me, handed me $200 from their own pockets, and said: <br><strong>'Take this. Keep training, and become the youngest climber from Thailand to summit Mount Everest.'</strong>"
+        </div>
+
+        <p>
+          That moment transformed a personal adventure into a lifetime calling. Those climbers didn’t just give me $200—they gave me the conviction that with discipline, relentless preparation, and the right partners, a Thai teenager can stand on the highest point on Earth.
+        </p>
+
+        <div class="story-grid">
+          <div class="story-item">
+            <h4>🎯 Why Island Peak (April 2027)?</h4>
+            <p>
+              Reaching Everest isn't about rushing—it is about earned competence. Island Peak (Imja Tse, 6,189m) requires glacier travel, fixed-rope ascents, crampon footwork, and crevasse crossings. It is the crucial next technical step.
+            </p>
+          </div>
+          <div class="story-item">
+            <h4>🧗 Why Ama Dablam (April 2028)?</h4>
+            <p>
+              Known as the "Matterhorn of the Himalayas," Ama Dablam (6,812m) is one of the most demanding technical rock, snow, and ice peaks on the planet. Mastering it proves readiness for Everest’s death zone.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive EBC Trek Explorer -->
+  <section id="trek">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">The Solo EBC Journey</h2>
+        <p class="section-subtitle">Click each checkpoint along my unguided trek to explore altitudes and key milestones.</p>
+      </div>
+
+      <div class="trek-container">
+        <div class="trek-controls" id="trekControls">
+          <!-- Populated by JS -->
+        </div>
+
+        <div class="checkpoint-display" id="checkpointDisplay">
+          <div>
+            <h3 id="cpTitle" style="font-size: 1.5rem; margin-bottom: 8px;">Lukla</h3>
+            <p id="cpSummary" style="color: var(--text-muted); font-size: 1rem; margin-bottom: 16px;">
+              The trek begins after flying into Tenzing-Hillary Airport. Packed gear, adjusted straps, and stepped onto the trail solo.
+            </p>
+            <div id="cpDetails" style="background: rgba(255,255,255,0.03); padding: 16px; border-radius: 8px; border-left: 3px solid var(--primary); font-size: 0.9rem;">
+              Solo Challenge: Initial gear check and pacing under a heavy solo pack.
+            </div>
+          </div>
+          <div style="text-align: right; display: flex; flex-direction: column; justify-content: center;">
+            <div class="checkpoint-alt" id="cpAltitude">2,860m</div>
+            <div style="color: var(--text-muted); font-size: 0.85rem;" id="cpDay">Day 1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YouTube Video Showcase -->
+  <section id="videos">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Documented on Video: Watch the Journey</h2>
+        <p class="section-subtitle">Real, unfiltered documentation of the solo expedition from YouTube (@noproblemrr).</p>
+      </div>
+
+      <div style="max-width: 900px; margin: 0 auto;">
+        <div class="video-wrapper">
+          <iframe 
+            src="https://www.youtube.com/embed/SyFx_AHojrs" 
+            title="Everest Base Camp SOLO at 16YRO (SOLO EBC FINAL EPISODE)" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div style="text-align: center; margin-top: 24px;">
+          <a href="https://www.youtube.com/@noproblemrr?sub_confirmation=1" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="gap: 8px;">
+            ▶ Subscribe to Noproblemrr on YouTube
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expedition Roadmap -->
+  <section id="roadmap">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">The Four-Stage Summit Roadmap</h2>
+        <p class="section-subtitle">A deliberate, calculated progression to stand atop Mount Everest safely.</p>
+      </div>
+
+      <div class="roadmap-timeline">
+        <div class="timeline-item">
+          <div>
+            <div class="timeline-badge status-completed">COMPLETED</div>
+            <div style="text-align: center; font-size: 0.8rem; color: var(--text-muted); margin-top: 6px;">At Age 16</div>
+          </div>
+          <div>
+            <h3 style="font-size: 1.3rem;">Everest Base Camp (5,364m)</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 4px;">
+              Completed solo and completely unguided. Tested endurance, acclimatization resilience, and captured the entire expedition on YouTube. Received the $200 catalyst gift from international mountaineers.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div>
+            <div class="timeline-badge status-next">APRIL 2027</div>
+            <div style="text-align: center; font-size: 0.8rem; color: var(--primary); margin-top: 6px;">Next Target</div>
+          </div>
+          <div>
+            <h3 style="font-size: 1.3rem;">Island Peak / Imja Tse (6,189m)</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 4px;">
+              Technical training peak. Mastering steep headwalls, crampon technique, ladder crossings, and high-altitude glacier navigation in the Himalayas. Seeking expedition sponsorship now.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div>
+            <div class="timeline-badge status-future">APRIL 2028</div>
+            <div style="text-align: center; font-size: 0.8rem; color: var(--accent); margin-top: 6px;">Milestone 3</div>
+          </div>
+          <div>
+            <h3 style="font-size: 1.3rem;">Ama Dablam (6,812m)</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 4px;">
+              One of the world's most revered technical climbs. Exposure to sustained vertical rock, mixed ice climbing, and multi-day high-camp survival in sub-zero alpine conditions.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div>
+            <div class="timeline-badge status-future">FINAL SUMMIT</div>
+            <div style="text-align: center; font-size: 0.8rem; color: #f8fafc; margin-top: 6px;">History in the Making</div>
+          </div>
+          <div>
+            <h3 style="font-size: 1.3rem;">Mount Everest (8,848.86m)</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 4px;">
+              Standing on the highest summit in the world to become the youngest Thai mountaineer in history, carrying the Thai flag and partner brands to the top of the world.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sponsorship Tiers Section -->
+  <section id="sponsor">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Partner with the Expedition</h2>
+        <p class="section-subtitle">Align your brand with grit, youth achievement, and high-impact storytelling across the Himalayas.</p>
+      </div>
+
+      <div class="tier-grid">
+        <!-- Tier 1 -->
+        <div class="tier-card">
+          <div>
+            <h3 class="tier-title">Gear & Equipment Partner</h3>
+            <div class="tier-target">Apparel, Technical Gear & Nutrition</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+              Equip the climb with high-performance mountaineering gear, boots, base layers, or endurance nutrition.
+            </p>
+            <ul class="tier-features">
+              <li>In-depth video gear reviews on YouTube</li>
+              <li>Dedicated product placements during summit bids</li>
+              <li>Social media tags throughout all training</li>
+              <li>High-resolution field photography for brand use</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline" style="width: 100%; margin-top: 20px;" onclick="selectTier('Gear & Equipment Partner')">Inquire for Gear</button>
+        </div>
+
+        <!-- Tier 2 -->
+        <div class="tier-card featured">
+          <div class="tier-badge">Primary Focus</div>
+          <div>
+            <h3 class="tier-title">Island Peak Expedition Partner</h3>
+            <div class="tier-target">April 2027 Main Sponsor</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+              Full expedition support covering climbing permits, technical Sherpa guide logistics, flights, and mountain base camp operations.
+            </p>
+            <ul class="tier-features">
+              <li>Prominent logo placement on summit jacket & gear</li>
+              <li>Brand flag unveiled at Island Peak summit (6,189m)</li>
+              <li>Featured sponsor integration across all video episodes</li>
+              <li>Co-branded documentary rights and content assets</li>
+            </ul>
+          </div>
+          <button class="btn btn-primary" style="width: 100%; margin-top: 20px;" onclick="selectTier('Island Peak Expedition Partner')">Sponsor April 2027</button>
+        </div>
+
+        <!-- Tier 3 -->
+        <div class="tier-card">
+          <div>
+            <h3 class="tier-title">Long-Term Everest Partner</h3>
+            <div class="tier-target">Multi-Year Journey to 8,848m</div>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">
+              Join the multi-year journey from Island Peak (2027) through Ama Dablam (2028) to the historic Everest summit attempt.
+            </p>
+            <ul class="tier-features">
+              <li>Title partnership across the entire "Road to Everest" series</li>
+              <li>Corporate summit flag display on Mt. Everest</li>
+              <li>Keynote / inspirational speaking sessions post-expedition</li>
+              <li>Exclusive media & PR campaign alignment</li>
+            </ul>
+          </div>
+          <button class="btn btn-outline" style="width: 100%; margin-top: 20px;" onclick="selectTier('Long-Term Everest Partner')">Discuss Title Partnership</button>
+        </div>
+      </div>
+
+      <!-- Interactive Sponsor Contact Form -->
+      <div class="contact-card" style="margin-top: 60px;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 8px; text-align: center;">Send a Sponsorship Inquiry</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem; text-align: center; margin-bottom: 28px;">
+          Direct connection for brands, media inquiries, and supporters.
+        </p>
+
+        <form id="sponsorForm" onsubmit="handleInquiry(event)">
+          <div class="form-group">
+            <label for="brandName">Company / Sponsor Name</label>
+            <input type="text" id="brandName" class="form-control" required placeholder="e.g. North Ridge Outdoors / Individual Supporter">
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" id="contactEmail" class="form-control" required placeholder="contact@company.com">
+          </div>
+          <div class="form-group">
+            <label for="tierSelect">Partnership Level</label>
+            <select id="tierSelect" class="form-control">
+              <option value="Island Peak Expedition Partner (April 2027)">Island Peak Expedition Partner (April 2027)</option>
+              <option value="Gear & Equipment Partner">Gear & Equipment Partner</option>
+              <option value="Long-Term Everest Partner (Road to 8,848m)">Long-Term Everest Partner (Road to 8,848m)</option>
+              <option value="Other / Media Inquiry">Other / Media Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" class="form-control" placeholder="Tell me about your brand, proposal, or how you'd like to collaborate..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Prepare & Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>🏔️ <strong>Noproblemrr</strong> — Inspiring the next generation of Thai mountaineers.</p>
+      <p style="margin-top: 8px;">
+        Follow the climb: <a href="https://www.youtube.com/@noproblemrr" target="_blank" rel="noopener noreferrer">YouTube @noproblemrr</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Interactive Checkpoint Data for EBC
+    const checkpoints = [
+      {
+        name: "Lukla",
+        day: "Day 1",
+        altitude: "2,860m",
+        summary: "The expedition kicked off landing at the legendary Tenzing-Hillary Airport. Strapped up my 18kg pack and began the trek solo into the Dudh Kosi valley.",
+        detail: "Key Takeaway: Navigating route markers and managing pack weight independently without a porter."
+      },
+      {
+        name: "Namche Bazaar",
+        day: "Day 2-3",
+        altitude: "3,440m",
+        summary: "The bustling cultural capital of the Sherpa community nestled in a natural mountain amphitheater. Took essential acclimatization hikes above 3,800m.",
+        detail: "Key Takeaway: Monitoring resting heart rate and blood oxygen levels before continuing higher."
+      },
+      {
+        name: "Tengboche",
+        day: "Day 4",
+        altitude: "3,867m",
+        summary: "Home to the famous Tengboche Monastery. Caught my first awe-inspiring, up-close view of Ama Dablam soaring into the sky—the peak I will summit in 2028.",
+        detail: "Key Takeaway: Spiritual pause and the realization of how steep technical peaks like Ama Dablam really are."
+      },
+      {
+        name: "Dingboche",
+        day: "Day 5-6",
+        altitude: "4,410m",
+        summary: "Stepped beyond the tree line into harsh alpine winds and stone-walled fields. Completed a grueling acclimatization push up Nangkartshang Peak (5,083m).",
+        detail: "Key Takeaway: Thin air begins to demand deliberate, slow breathing and constant hydration."
+      },
+      {
+        name: "Lobuche",
+        day: "Day 7",
+        altitude: "4,940m",
+        summary: "Walked past the emotional memorials of Everest climbers at Thokla Pass. The Khumbu Glacier moraine loomed ahead.",
+        detail: "Key Takeaway: Respect for the mountain and the serious discipline required for 8,000m summits."
+      },
+      {
+        name: "Gorak Shep",
+        day: "Day 8",
+        altitude: "5,164m",
+        summary: "The highest frozen outpost before the base camp. Sub-zero temperatures, freezing wind, and a final push over rocky glacial rubble.",
+        detail: "Key Takeaway: Staying mentally sharp despite cold fatigue and high elevation."
+      },
+      {
+        name: "Everest Base Camp",
+        day: "Day 8 (Summit Day)",
+        altitude: "5,364m",
+        summary: "Reached the iconic EBC prayer flags! Met the group of international climbers who gifted me $200 and inspired me to become the youngest Thai to summit Everest.",
+        detail: "The Turning Point: The birth of the dream to summit Island Peak (2027), Ama Dablam (2028), and Mount Everest (8,848m)."
+      }
+    ];
+
+    const controlsContainer = document.getElementById("trekControls");
+    const cpTitle = document.getElementById("cpTitle");
+    const cpAltitude = document.getElementById("cpAltitude");
+    const cpDay = document.getElementById("cpDay");
+    const cpSummary = document.getElementById("cpSummary");
+    const cpDetails = document.getElementById("cpDetails");
+
+    function renderCheckpoints() {
+      controlsContainer.innerHTML = "";
+      checkpoints.forEach((cp, index) => {
+        const btn = document.createElement("button");
+        btn.className = `trek-btn ${index === 0 ? "active" : ""}`;
+        btn.textContent = `${cp.name} (${cp.altitude})`;
+        btn.onclick = () => selectCheckpoint(index, btn);
+        controlsContainer.appendChild(btn);
+      });
+    }
+
+    function selectCheckpoint(index, btnElement) {
+      document.querySelectorAll(".trek-btn").forEach(b => b.classList.remove("active"));
+      if (btnElement) btnElement.classList.add("active");
+      
+      const cp = checkpoints[index];
+      cpTitle.textContent = cp.name;
+      cpAltitude.textContent = cp.altitude;
+      cpDay.textContent = cp.day;
+      cpSummary.textContent = cp.summary;
+      cpDetails.innerHTML = `<strong>Expedition Highlight:</strong> ${cp.detail}`;
+    }
+
+    function selectTier(tierName) {
+      const select = document.getElementById("tierSelect");
+      if (select) {
+        for (let i = 0; i < select.options.length; i++) {
+          if (select.options[i].text.includes(tierName) || select.options[i].value.includes(tierName)) {
+            select.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      document.getElementById("sponsor").scrollIntoView({ behavior: "smooth" });
+    }
+
+    function handleInquiry(e) {
+      e.preventDefault();
+      const brand = document.getElementById("brandName").value;
+      const email = document.getElementById("contactEmail").value;
+      const tier = document.getElementById("tierSelect").value;
+      const message = document.getElementById("message").value;
+
+      const subject = encodeURIComponent(`Expedition Sponsorship Inquiry - ${brand} (${tier})`);
+      const body = encodeURIComponent(
+        `Hi Noproblemrr,
+
+I am contacting you regarding sponsorship / partnership for your upcoming Himalayan expeditions.
+
+Sponsor/Company: ${brand}
+Contact Email: ${email}
+Partnership Interest: ${tier}
+
+Message:
+${message}
+
+Looking forward to hearing from you!`
+      );
+
+      // Trigger mailto link
+      window.location.href = `mailto:contact@noproblemrr.com?subject=${subject}&body=${body}`;
+    }
+
+    renderCheckpoints();
+  </script>
+</body>
+</html>
+
